@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: column;  /* Asegura que los enlaces estén apilados en móviles */
     list-style: none;
-    padding: 0;
+    padding-top: 90px;
     margin: 0;
     gap: 1rem;  /* Espaciado entre los enlaces */
     text-align: center;
+
 }
 
 .NavLinks li {
@@ -23,16 +24,3 @@
     color: #00ccff; /* Cambio de color al pasar el ratón sobre los enlaces */
     transform: scale(1.1);  /* Agranda el enlace ligeramente */
 }
-
-/* Estilo adicional para los enlaces */
-/*.NavLinks a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;  /* Aumenté un poco el tamaño de la fuente para mayor visibilidad */
-   /* padding: 10px;
-    transition: color 0.3s ease;
-}*/
-
-/*.NavLinks a:hover {
-    color: #00ccff; /* Cambio de color al pasar el ratón sobre los enlaces */
-/*}*/
