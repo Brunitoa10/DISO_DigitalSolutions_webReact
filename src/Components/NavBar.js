@@ -20,6 +20,7 @@ const NavBar = () => {
     return (
         <nav className={!navBarOpen ? styles.NavBar : styles.NavOpen}>
             <div className={styles.logo}>
+                {/* Mostrar el logo solo cuando el menú está cerrado */}
                 {!navBarOpen && <p>DISO | Digital Solutions</p>}
             </div>
             {!navBarOpen ? (
@@ -31,6 +32,7 @@ const NavBar = () => {
                     <IoMdClose size={25} />
                 </button>
             )}
+            {/* Mostrar NavLinks solo cuando el menú está abierto */}
             {navBarOpen && <NavLinks links={links} onClick={toggleNavBar} />}
         </nav>
     );
