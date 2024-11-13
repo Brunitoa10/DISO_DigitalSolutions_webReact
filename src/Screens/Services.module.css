@@ -1,0 +1,23 @@
+.services {
+    display: flex;
+    background: linear-gradient(0deg, #1a1826, #413b5e);
+    justify-content: center;
+    padding-top: 80px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.webImage {
+    width: 100%;             /* La imagen ocupa el 100% del ancho del contenedor */
+    max-width: 400px;         /* Define un tamaño máximo para pantallas grandes */
+    height: auto;             /* Mantiene la proporción de la imagen */
+    padding-bottom: 80px;
+}
+
+.services p {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 60px;
+}
