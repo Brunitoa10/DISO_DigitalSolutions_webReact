@@ -1,26 +1,36 @@
 .NavLinks {
     display: flex;
-    flex-direction: column;  /* Asegura que los enlaces estén apilados en móviles */
+    flex-direction: column;
     list-style: none;
     padding-top: 90px;
     margin: 0;
-    gap: 1rem;  /* Espaciado entre los enlaces */
+    gap: 1rem;
     text-align: center;
-
 }
 
 .NavLinks li {
     cursor: pointer;
     padding: 0.5rem 0;
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease, padding 0.3s ease;
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;  /* Aumenté un poco el tamaño de la fuente para mayor visibilidad */
+    font-size: 1.5rem;
     padding: 10px;
-    transition: color 0.3s ease;
 }
 
 .NavLinks li:hover {
-    color: #00ccff; /* Cambio de color al pasar el ratón sobre los enlaces */
-    transform: scale(1.1);  /* Agranda el enlace ligeramente */
+    color: #00ccff;
+    transform: scale(1.1);
+    padding: 15px;
+}
+
+@media (min-width: 800px) {
+    .NavLinks {
+        display: flex;
+        width: 50%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 0;
+        font-size: 1.4em;
+    }
 }

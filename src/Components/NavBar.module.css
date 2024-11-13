@@ -4,7 +4,7 @@
     justify-content: space-between;
     padding: 1rem;
     background-color: #4a4564;
-    position: relative;  /* Para que el menú se posicione correctamente respecto a este contenedor */
+    position: relative; /* Para que el menú se posicione correctamente respecto a este contenedor */
 }
 
 /* Menú abierto (NavOpen) */
@@ -18,8 +18,7 @@
     background-color: #4a4564;
     flex-direction: column;
     align-items: center;
-   /* justify-content: space-evenly;*/
-    z-index: 9999;  /* Asegura que el menú se superponga sobre otros elementos */
+    z-index: 9999; /* Asegura que el menú se superponga sobre otros elementos */
     transition: transform 0.3s ease-in-out; /* Suaviza la transición al abrir/cerrar */
     transform: translateY(0);
 }
@@ -35,11 +34,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;  /* Asegúrate de que el icono sea visible */
+    color: #fff; /* Asegúrate de que el icono sea visible */
 }
 
 /* Logo */
 .logo {
     font-size: 1.5rem;
     color: #ffffff;
+}
+
+@media (min-width: 800px) {
+    .logo {
+        font-size: 2rem;
+    }
+    .NavBar {
+        align-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 50px;
+    }
 }
