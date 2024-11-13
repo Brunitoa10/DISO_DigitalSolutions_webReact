@@ -1,0 +1,29 @@
+.Benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, #1a1826, #413b5e);
+}
+  
+.benefitTitle {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+.benefitItem {
+    display: flex;
+    align-items: center;
+    padding-top: 10px; /* Espacio entre el icono y el texto */
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 15px;
+}
+  
+.icon {
+    font-size: 1.5em;
+    color: #0073e6; /* Color de los iconos */
+    margin-right: 12px;
+}
+  

@@ -9,9 +9,8 @@
 }
 
 .webImage {
-    width: 100%;             /* La imagen ocupa el 100% del ancho del contenedor */
-    max-width: 400px;         /* Define un tamaño máximo para pantallas grandes */
-    height: auto;             /* Mantiene la proporción de la imagen */
+    width: 298px;
+    height: 193px;
     padding-bottom: 80px;
 }
 
@@ -20,4 +19,14 @@
     font-size: 1.5em;
     text-align: center;
     padding-bottom: 60px;
+}
+
+@media (min-width: 800px) {
+    .services p {
+        font-size: 2.5em;
+    }
+    .webImage{
+        width: 596px;
+        height: 396px;
+    }
 }
