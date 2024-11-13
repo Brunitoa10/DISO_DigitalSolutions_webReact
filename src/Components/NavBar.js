@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
+import { useScrollPosition } from "../Hooks/scrollPosition";
 import styles from './NavBar.module.css';
 import NavLinks from './NavLinks';
+
 
 const NavBar = () => {
     const [navBarOpen, setNavBarOpen] = useState(false);
@@ -42,8 +44,10 @@ const NavBar = () => {
 
     const toggleNavBar = () => setNavBarOpen(!navBarOpen);
 
+    const scrollPosition = useScrollPosition();
+
     return (
-        <nav className={!navBarOpen ? styles.NavBar : styles.NavOpen}>
+        <nav className={navBarOpen ? styles.NavOpen : scrollPosition > 0 ? styles.NavOnScroll : styles.NavBar}>
             <div className={styles.logo}>
                 {/* Mostrar el logo solo cuando el menú está cerrado */}
                 {!navBarOpen && <p>DISO | Digital Solutions</p>}

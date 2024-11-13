@@ -37,6 +37,14 @@
     color: #fff; /* Asegúrate de que el icono sea visible */
 }
 
+/*scroll*/
+.NavOnScroll{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4a4564;
+}
+
 /* Logo */
 .logo {
     font-size: 1.5rem;
@@ -52,5 +60,11 @@
         align-items: center;
         justify-content: space-evenly;
         height: 50px;
+    }
+    .NavOnScroll{
+        align-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #4a4564;
     }
 }
