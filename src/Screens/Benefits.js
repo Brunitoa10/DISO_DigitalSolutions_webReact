@@ -16,7 +16,7 @@ const Benefits = () => {
   ];
 
   return (
-    <div className={styles.Benefits}>
+    <div name="Benefits" className={styles.Benefits}>
       <h2 className={styles.benefitTitle}>Benefits of having a professional web</h2>
       {benefitsList.map((benefit, index) => (
         <div className={styles.benefitItem} key={index}>

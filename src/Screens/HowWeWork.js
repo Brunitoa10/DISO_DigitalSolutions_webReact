@@ -12,7 +12,7 @@ const HowWeWork = () => {
   ];
 
   return (
-    <div className={styles.HowWeWork}>
+    <div name="HowWeWork" className={styles.HowWeWork}>
       <h2 className={styles.titleHow}>How We Work</h2>
       {steps.map((x) => (
         <Step text={x.text} step={x.id} key={x.id} />

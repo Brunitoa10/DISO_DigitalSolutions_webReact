@@ -5,7 +5,7 @@ import TextArea from './TextArea';
 
 const ContactForm = () => {
   return (
-    <form className={styles.form} method="POST" action="https://getform.io/f/718583e8-f2fc-4e02-a970-9f8a6eaa2036">
+    <form className={styles.form} method="POST" action="https://getform.io/f/bejjloga">
       <Input label="Name" id="Name" name="Name" className={styles.input} />
       <Input label="Email" id="Email" name="Email" type="email" className={styles.input} />
       <TextArea label="Message" id="Message" name="Message" className={styles.textArea} />
