@@ -1,5 +1,5 @@
 import React from 'react';
-import { Step } from '../Components/Step'; // Asegúrate de que el nombre del archivo Step.js sea correcto y esté en la ruta indicada
+import { Step } from '../Components/Step';
 import styles from './HowWeWork.module.css';
 
 const HowWeWork = () => {

@@ -18,8 +18,8 @@ const Home = () => {
         </p>
       </div>
       <div className={styles.contactContainer}>
-        <Link to="contact" smooth duration={500} className={styles.callToAction}>Get in Touch</Link>
-        <Link to="contact" smooth duration={500} className={styles.callToAction}>Get a Quota</Link>
+        <Link to="Contact" smooth duration={500} className={styles.callToAction}>Get in Touch</Link>
+        <Link to="Contact" smooth duration={500} className={styles.callToAction}>Get a Quota</Link>
       </div>
     </div>
   )
